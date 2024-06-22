@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Visão criativa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+    }
+    /* CSS para o botão "Ir para o topo" */
+    #toTopBtn {
+        display: none; /* Escondido por padrão */
+        position: fixed; /* Fica fixo na tela */
+        top: 50%; /* Centraliza verticalmente */
+        right: 20px; /* Distância da parte direita da tela */
+        z-index: 99; /* Coloca o botão à frente de outros elementos */
+        border: none; /* Sem bordas */
+        outline: none; /* Sem outline */
+        background-color: rgb(175, 22, 22);; /* Cor de fundo */
+        color: white; /* Cor do texto */
+        cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+        padding: 15px; /* Espaçamento interno */
+        border-radius: 10px; /* Bordas arredondadas */
+        font-size: 18px; /* Tamanho do texto */
+        transform: translateY(-50%); /* Ajusta a posição para centralizar exatamente no meio */
+    }
+
+    #toTopBtn:hover {
+        background-color: #555; /* Cor de fundo ao passar o cursor */
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        
+            <section class="top-header">
+                <div class="interface">
+                        <div class="logotipo">
+                             <!-- Criando imagem com link-->
+                            <a href="index.html">
+                                <img src="imagens/testeimagem.jpg" alt="Logotipo">
+                            </a>
+                        </div>
+
+                            <!-- Criando os botões com imagem e link-->
+                        <div class="btn-social">
+                            <a href="https://www.instagram.com/"> <button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.whatsapp.com/?lang=pt_BR"> <button><i class="bi bi-whatsapp"></i></button></a>
+                            <a href="https://www.facebook.com/"> <button><i class="bi bi-facebook"></i></button></a>
+                        </div>
+                </div>
+            </section>
+
+            <section class="bottom-header">
+                <div class="interface">
+
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="quemsomos.html">Sobre</a></li>
+                            <li><a href="galeria.html">Galeria</a>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+
+                    </nav>
+
+
+                </div>
+            </section>
+    </header>
+
+    <main>
+       <section class = "quemsom">
+            <h1>Conheça a Visão Criativa</h1>
+            <div class="texto1"><br><br>Bem-vindo à Visão Criativa, um universo onde cada momento é transformado em uma história cativante, cada cena capturada é uma obra-prima em potencial, e cada cliente é uma parte essencial de nossa jornada criativa.
+
+               <br><br> <br>    Somos mais do que uma empresa de fotografia. Somos contadores de histórias, artesãos visuais e guardiões de memórias. Fundada por Luis e Luana, dois amigos unidos por sua paixão compartilhada pela fotografia, a Visão Criativa nasceu do desejo de criar algo único, algo que transcende as expectativas e captura a essência de cada momento.
+                
+                <br><br> <br>   Em nossa jornada, aprendemos que a fotografia vai muito além de apenas apertar um botão. É sobre ver o mundo através de uma perspectiva única, capturando a beleza nos detalhes mais simples e transformando momentos fugazes em lembranças eternas. Cada clique é uma expressão de criatividade, uma manifestação de emoção, uma celebração da vida.
+                
+                <br><br> <br>   Na Visão Criativa, acreditamos na importância de cada cliente, em ouvir suas histórias, compreender suas visões e capturar sua essência única em cada imagem. Nosso compromisso com a excelência e a satisfação do cliente é o que impulsiona nosso trabalho a cada dia.
+                
+                <br><br>  <br>  Além de sermos fotógrafos, somos também contadores de histórias. Através de nossas lentes, buscamos narrar não apenas o que acontece diante de nós, mas também a emoção, a conexão e a beleza que permeiam cada momento. Cada imagem é uma página em branco, esperando para ser preenchida com as histórias de nossos clientes.
+                
+                <br><br>  <br>  Nossa missão é simples: criar experiências memoráveis, construir relacionamentos significativos e capturar momentos que durarão para sempre. Na Visão Criativa, não apenas tiramos fotos, nós criamos memórias. E estamos ansiosos para fazer parte da sua jornada, capturando os momentos mais preciosos da sua vida e transformando-os em lembranças que você irá apreciar para sempre.
+                
+                <br><br><br><h2>Obrigado por nos escolher para ser parte de sua história. Estamos honrados em compartilhar este caminho com você.</h2>
+            </div>
+        </section> 
+    </main>
+    <footer>
+        <div class="footer"><p>&copy; 2024 Visão Criativa</p></div>
+    </footer>
+    <!-- Botão "Ir para o topo" -->
+    <button onclick="topFunction()" id="toTopBtn" title="Ir para o topo">↑</button>
+    <!-- Script para funcionalidade do botão -->
+    <script>
+    // Quando o usuário rolar a página para baixo 20px a partir do topo, mostra o botão
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        var toTopBtn = document.getElementById("toTopBtn");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            toTopBtn.style.display = "block";
+        } else {
+            toTopBtn.style.display = "none";
+        }
+    }
+
+    // Quando o usuário clicar no botão, rola a página para o topo
+    function topFunction() {
+        document.body.scrollTop = 0; // Para Safari
+        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+    }
+    </script>
+</body>
+</html>

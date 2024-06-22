@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Visão criativa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+    }
+    /* CSS para o botão "Ir para o topo" */
+    #toTopBtn {
+        display: none; /* Escondido por padrão */
+        position: fixed; /* Fica fixo na tela */
+        top: 50%; /* Centraliza verticalmente */
+        right: 20px; /* Distância da parte direita da tela */
+        z-index: 99; /* Coloca o botão à frente de outros elementos */
+        border: none; /* Sem bordas */
+        outline: none; /* Sem outline */
+        background-color: rgb(175, 22, 22);; /* Cor de fundo */
+        color: white; /* Cor do texto */
+        cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+        padding: 15px; /* Espaçamento interno */
+        border-radius: 10px; /* Bordas arredondadas */
+        font-size: 18px; /* Tamanho do texto */
+        transform: translateY(-50%); /* Ajusta a posição para centralizar exatamente no meio */
+    }
+    #toTopBtn:hover {
+        background-color: #555; /* Cor de fundo ao passar o cursor */
+    }
+</style>
+<style>
+    body{
+        margin:0;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        
+            <section class="top-header">
+                <div class="interface">
+                        <div class="logotipo">
+                             <!-- Criando imagem com link-->
+                            <a href="index.html">
+                                <img src="imagens/testeimagem.jpg" alt="Logotipo">
+                            </a>
+                        </div>
+
+                            <!-- Criando os botões com imagem e link-->
+                        <div class="btn-social">
+                            <a href="https://www.instagram.com/"> <button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.whatsapp.com/?lang=pt_BR"> <button><i class="bi bi-whatsapp"></i></button></a>
+                            <a href="https://www.facebook.com/"> <button><i class="bi bi-facebook"></i></button></a>
+                        </div>
+                </div>
+            </section>
+
+            <section class="bottom-header">
+                <div class="interface">
+
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="quemsomos.html">Sobre</a></li>
+                            <li><a href="galeria.html">Galeria</a>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+
+                    </nav>
+
+
+                </div>
+            </section>
+    </header>
+    <main>
+        
+
+        <section class="galeria">
+            <div class="botoes">
+                <button type="button" data-btn="1">Todos</button>
+                <button type="button" data-btn="2">Casamento</button>
+                <button type="button" data-btn="3">Festivais</button>
+                <button type="button" data-btn="4">Turismo</button>
+            </div>
+            <div class="imagens">
+            <img src="imagens/Casamento1.jpg" alt="Casamento1" class="casamento" data-img="2">
+            <img src="imagens/Festival4.jpg" alt="Festival4" class="festival" data-img="3">
+            <img src="imagens/Turismo5.jpg" alt="Turismo5" class="turismo" data-img="4">
+            <img src="imagens/Casamento4.jpg" alt="Casamento4" class="casamento" data-img="2">
+            <img src="imagens/Festival3.jpg" alt="Festival3" class="festival" data-img="3">
+            <img src="imagens/Casamento6.jpg" alt="Casamento6" class="casamento" data-img="2">
+            <img src="imagens/Turismo2.jpg" alt="Turismo2" class="turismo" data-img="4">
+            <img src="imagens/Festival1.jpg" alt="Festival1" class="festival" data-img="3">
+            <img src="imagens/Casamento2.jpg" alt="Casamento2" class="casamento" data-img="2">
+            <img src="imagens/Festival2.jpg" alt="Festival2" class="festival" data-img="3">
+            <img src="imagens/Festival5.jpg" alt="Festival5" class="festival" data-img="3">
+            <img src="imagens/Turismo1.jpg" alt="Turismo1" class="turismo" data-img="4">
+            <img src="imagens/Turismo3.jpg" alt="Turismo3" class="turismo" data-img="4">
+            <img src="imagens/Casamento5.jpg" alt="Casamento5" class="casamento" data-img="2">
+            <img src="imagens/Turismo4.jpg" alt="Turismo4" class="turismo" data-img="4"> 
+            <img src="imagens/Festival6.jpg" alt="Festival6" class="festival" data-img="3">
+            <img src="imagens/Casamento3.jpg" alt="Casamento3" class="casamento"data-img="2">
+            <img src="imagens/Turismo6.jpg" alt="Turismo6" class="turismo" data-img="4">
+            </div>
+            <!-- Adicione mais imagens conforme necessário -->
+        </section>
+
+        <section class ="corpo1"></section>
+    </main>
+    <footer>
+        
+        <div class="footer"><p>&copy; 2024 Visão Criativa</p></div>
+    </footer>
+        <!-- Botão "Ir para o topo" -->
+        <button onclick="topFunction()" id="toTopBtn" title="Ir para o topo">↑</button>
+        <!-- Script para funcionalidade do botão -->
+        <script>
+        // Quando o usuário rolar a página para baixo 20px a partir do topo, mostra o botão
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            var toTopBtn = document.getElementById("toTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                toTopBtn.style.display = "block";
+            } else {
+                toTopBtn.style.display = "none";
+            }
+        }
+    
+        // Quando o usuário clicar no botão, rola a página para o topo
+        function topFunction() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        }
+        </script>
+    <script src="script.js"></script>
+</body>
+</html>

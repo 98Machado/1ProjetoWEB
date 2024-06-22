@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato Visão Criativa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+        }
+        /* CSS para o botão "Ir para o topo" */
+        #toTopBtn {
+        display: none; /* Escondido por padrão */
+        position: fixed; /* Fica fixo na tela */
+        top: 50%; /* Centraliza verticalmente */
+        right: 20px; /* Distância da parte direita da tela */
+        z-index: 99; /* Coloca o botão à frente de outros elementos */
+        border: none; /* Sem bordas */
+        outline: none; /* Sem outline */
+        background-color: rgb(175, 22, 22);; /* Cor de fundo */
+        color: white; /* Cor do texto */
+        cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+        padding: 15px; /* Espaçamento interno */
+        border-radius: 10px; /* Bordas arredondadas */
+        font-size: 18px; /* Tamanho do texto */
+        transform: translateY(-50%); /* Ajusta a posição para centralizar exatamente no meio */
+    }
+    
+        #toTopBtn:hover {
+            background-color: #555; /* Cor de fundo ao passar o cursor */
+        }
+    </style>
+    <style>
+        /* Estilo específico do formulário */
+        .caixa-formulario {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.322);
+            max-width: 600px;
+            margin: 40px auto;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .caixa-formulario h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+            color: rgb(185, 26, 26);
+        }
+
+        .caixa-formulario label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .caixa-formulario input, .caixa-formulario textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .caixa-formulario button {
+            width: 100%;
+            padding: 10px;
+            background-color: #424147; /* Tom de vermelho (Tomate) */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .caixa-formulario button:hover {
+            background-color: rgb(175, 22, 22); /* Tom de vermelho mais escuro (OrangeRed) */
+            color: rgba(20, 17, 17, 0.788);
+    font-style: italic;
+   box-shadow: inset 0 0 8px #000000e0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <section class="top-header">
+            <div class="interface">
+                <div class="logotipo">
+                    <!-- Criando imagem com link-->
+                    <a href="index.html">
+                        <img src="imagens/testeimagem.jpg" alt="Logotipo">
+                    </a>
+                </div>
+                <!-- Criando os botões com imagem e link-->
+                <div class="btn-social">
+                    <a href="https://www.instagram.com/"> <button><i class="bi bi-instagram"></i></button></a>
+                    <a href="https://www.whatsapp.com/?lang=pt_BR"> <button><i class="bi bi-whatsapp"></i></button></a>
+                    <a href="https://www.facebook.com/"> <button><i class="bi bi-facebook"></i></button></a>
+                </div>
+            </div>
+        </section>
+        <section class="bottom-header">
+            <div class="interface">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="quemsomos.html">Sobre</a></li>
+                        <li><a href="galeria.html">Galeria</a>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="caixa-formulario">
+            <h2>Entre em Contato</h2>
+            <form action="formulario.php" method="get">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="10" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <section class="corpo1"></section>
+    </main>
+
+    <footer>
+        <div class="footer"><p>&copy; 2024 Visão Criativa</p></div>
+    </footer>
+        <!-- Botão "Ir para o topo" -->
+        <button onclick="topFunction()" id="toTopBtn" title="Ir para o topo">↑</button>
+        <!-- Script para funcionalidade do botão -->
+        <script>
+        // Quando o usuário rolar a página para baixo 20px a partir do topo, mostra o botão
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            var toTopBtn = document.getElementById("toTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                toTopBtn.style.display = "block";
+            } else {
+                toTopBtn.style.display = "none";
+            }
+        }
+    
+        // Quando o usuário clicar no botão, rola a página para o topo
+        function topFunction() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        }
+        </script>
+
+</body>
+</html>
