@@ -296,28 +296,28 @@ h2 {
     font-size: 24px;
     cursor: pointer;
 }
-@media screen and (max-width: 1439px) {
+/*@media screen and (max-width: 1439px) {
     .galeria img {
-        width: calc(33.33% - 	0.93em); /* Ajuste menor para telas abaixo de 1440px */
+        width: calc(33.33% - 	0.93em); /* Ajuste menor para telas abaixo de 1440px 
     }
 }
 
 @media screen and (max-width: 1024px) {
     .galeria img {
-        width: calc(33.33% - 0.62em); /* Ajuste menor para telas abaixo de 1024px */
+        width: calc(33.33% - 0.62em); /* Ajuste menor para telas abaixo de 1024px 
     }
 }
 
 @media screen and (max-width: 768px) {
     .galeria img {
-        width: calc(33.33% - 0.5em); /* Ajuste menor para telas abaixo de 768px */
+        width: calc(33.33% - 0.5em); /* Ajuste menor para telas abaixo de 768px
     }
 }
 
 @media screen and (max-width: 600px) {
     .galeria img {
-        width: calc(50% - 10px); /* Duas colunas em telas menores */
-    }
+        width: calc(50% - 10px); /* Duas colunas em telas menores 
+    } */
 }
     .imagens img {
         margin-right: 0 !important;
