@@ -296,91 +296,35 @@ h2 {
     font-size: 24px;
     cursor: pointer;
 }
-
 @media screen and (max-width: 1439px) {
-    .imagens {
-        max-width: 896px;
+    .galeria img {
+        width: calc(33.33% - 	0.93em); /* Ajuste menor para telas abaixo de 1440px */
     }
 }
 
-@media screen and (max-width: 986px) {
-    .imagens {
-        align-items: center;
-        flex-direction: column;
+@media screen and (max-width: 1024px) {
+    .galeria img {
+        width: calc(33.33% - 0.62em); /* Ajuste menor para telas abaixo de 1024px */
     }
+}
 
+@media screen and (max-width: 768px) {
+    .galeria img {
+        width: calc(33.33% - 0.5em); /* Ajuste menor para telas abaixo de 768px */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .galeria img {
+        width: calc(50% - 10px); /* Duas colunas em telas menores */
+    }
+}
     .imagens img {
         margin-right: 0 !important;
         margin-left: 0 !important;
     }
 }
-/*
-@media screen and (max-width: 600px) {
-    .top-header > .interface {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .top-header .logotipo img {
-        max-width: 150px;
-    }
-
-    .top-header .btn-social {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .bottom-header nav ul {
-        flex-direction: column;
-    }
-
-    .bottom-header nav ul li a {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-
-    .botoes {
-        flex-direction: column;
-    }
-
-    .botoes button {
-        width: 100%;
-        padding: 0.5em 1em;
-        font-size: 1em;
-    }
-
-    .galeria {
-        padding: 1em;
-    }
-
-    .galeria .imagens {
-        padding-left: 0;
-        justify-content: center;
-    }
-
-    .galeria img {
-        width: 100%;
-        height: auto;
-    }
-
-    h1{
-        padding-top: -5px;
-    }
-    .texto1{
-        padding-bottom: 150px;
-    }
-    .qsmomos,
-    .texto1,
-    .texto2 {
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-
-    footer {
-        padding: 0.5rem 0;
-    }
-} */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
