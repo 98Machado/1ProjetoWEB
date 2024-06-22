@@ -381,6 +381,11 @@ h2 {
         padding: 0.5rem 0;
     }
 } */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
 
 @media screen and (max-width: 600px) {
     /* Ajuste do logotipo */
